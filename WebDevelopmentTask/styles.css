@@ -1,0 +1,326 @@
+/* general settings */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,500;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.btn{
+border: none;
+background-color: #2e2e2e;
+padding: 10px 20px;
+color: white;
+}
+
+.display-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* navbar styling */
+nav {
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+.nav-items ul,
+.mobile-menu-link ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav-items ul li,
+.mobile-menu-link ul {
+    padding: 20px;
+}
+
+.nav-items ul li:hover,
+.nav-items ul li:active,
+.mobile-menu-link, a:active {
+    background-color: rgb(3, 70, 70);
+}
+
+ul li a i {
+    padding-right: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.search-item {
+    gap: 10px;
+    padding: 0 20px;
+}
+
+.search-input {
+    border: 1px solid white;
+    background-color: transparent;
+    padding: 0px 10px;
+    height: 30px;
+    color: white;
+    border-radius: 5px;
+    display: none;
+}
+
+.responsive-btn,
+.mobile-menu-link {
+    display: none;
+}
+
+/* Landing page styling */
+
+.landingPageImg {
+    height: 30vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    background-image: url('https://images.unsplash.com/photo-1682685797366-715d29e33f9d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80');
+}
+
+.heading {
+    position: absolute;
+    top: 75%;
+    left: 5%;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+
+/* team section */
+.team {
+    text-align: center;
+    justify-content: center;
+    margin: 2rem 0
+}
+
+h2 {
+    font-size: 32px;
+}
+
+p {
+    font-size: 14px;
+}
+
+.people {
+    width: 70vw;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 1rem auto;
+}
+
+.person-img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+
+}
+
+.person * {
+    padding: 10px;
+}
+
+/* WORK SECTION */
+.work{
+    padding: 50px 20px;
+    background-color: #2e2e2e;
+    color: white;
+    gap: 2rem;
+}
+
+.work img{
+    height: 20vh;
+    width: 20vw;
+}
+
+.work-card{
+    background-color: white;
+    color: black;
+}
+
+.work-card h4, .work-card h6, .work-card p{
+    padding: 5px 20px;
+}
+
+.work-card *{
+    padding: 5px 0;
+}
+
+p{
+    line-height: 20px;
+}
+
+/* CONTACT FORM */
+.contact{
+    background-color: #F0F1F3;
+    padding: 50px 20px;
+    position: relative;
+}
+
+.plusSign{
+    position: absolute;
+    top: -5%;
+    right: 5%;
+    background-color: rgb(4, 172, 108);
+    padding: 15px 18px ;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.left-side *{
+padding: 5px 0;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px;
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5);
+}
+
+form input[type = "text"]{
+    padding: 20px;
+    width: 40vw;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #2e2e2e;
+    border-spacing: 20px;
+    background-color: transparent;
+}
+
+.actions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.checkbox{
+    display: flex;
+    gap: 10px;
+}
+
+/* footer */
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer *{
+    padding: 5px 0;
+}
+
+footer i{
+    padding: 10px;
+    margin: 0 5px;
+    background-color: rgb(4, 172, 108);
+    position: relative;
+}
+
+.upScroller{
+position: absolute;
+right: 40px;
+margin-top: -50px;
+padding: 10px;
+}
+
+.upScroller i{
+    background-color: black;
+    color: white;
+}
+
+
+/* RESPONSIVE STYLING */
+@media only screen and (max-width: 768px) {
+
+    nav {
+        flex-direction: row;
+        padding: 0px 20px;
+        align-items: center;
+        z-index: 1;
+    }
+
+    .nav-items ul {
+        flex-direction: column;
+        height: 90vh;
+        width: auto;
+        justify-content: center;
+        animation: goDown 800ms ease-in-out forwards;
+        transform-origin: top center;
+    }
+
+    @keyframes goDown {
+        0% {
+            transform: scaleY(0)
+        }
+
+        80% {
+            transform: scaleY(1.1)
+        }
+
+        100% {
+            transform: scaleY(1)
+        }
+    }
+
+    .display-none,
+    .search-item {
+        display: none;
+    }
+
+    .responsive-btn,
+    .mobile-menu-link {
+        display: block;
+    }
+
+    .responsive-btn {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+
+    .people, .work {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .work img{
+        width: 90vw;
+    }
+
+    .contact{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    form{
+        width: 80vw;
+    }
+
+    form input[type = "text"]{
+        width: 70vw;
+    }
+
+    .actions{
+        flex-direction: column;
+        gap: 1rem;
+    }
+}

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome icons kit -->
+    <script src="https://kit.fontawesome.com/8e9a2ff704.js" crossorigin="anonymous"></script>
+    <!-- css styling file -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- javascript file -->
+    <script src="./index.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <nav id="home" class="display-flex">
+        <div class="mobile-menu-link">
+            <ul>
+                <li>
+                    <a href="#home">
+                        <i class="fa-solid fa-house"></i>
+                        Logo
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-items display-none" id="nav-items">
+            <ul>
+                <li>
+                    <a href="#home">
+                        <i class="fa-solid fa-house"></i>
+                        Logo
+                    </a>
+                </li>
+                <li>
+                    <a href="#team">
+                        <i class="fa-solid fa-people-group"></i>
+                        Team
+                    </a>
+                </li>
+                <li>
+                    <a href="#work">
+                        <i class="fa-solid fa-briefcase"></i>
+                        Work
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact">
+                        <i class="fa-solid fa-tags"></i>
+                        Price
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact">
+                        <i class="fa-regular fa-address-card"></i>
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="search-item display-flex">
+            <input class="search-input" type="text" id="search-box" placeholder="Search">
+            <i class="fa-solid fa-magnifying-glass" onclick="showShearchBar()"></i>
+        </div>
+        <div class="responsive-btn">
+            <i class="fa-solid fa-bars" onclick="toggleNavbar()"></i>
+        </div>
+    </nav>
+    <main>
+        <section class="landingPageImg">
+            <h5 class="heading">Talentera</h5>
+        </section>
+        <!-- TEAM SECTION -->
+        <section class="team " id="team">
+            <h2 class="team-heading">Our Team</h2>
+            <p class="team-para">Meat the team - our office rats:</p>
+            <div class="people display-flex">
+                <div class="person">
+                    <img class="person-img"
+                        src="https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                        alt="">
+                    <h3 class="name">Islam AlZatary</h3>
+                    <p class="designation">Web Developer</p>
+                </div>
+                <div class="person">
+                    <img class="person-img"
+                        src="https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                        alt="">
+                    <h3 class="name">Tayseer Emam</h3>
+                    <p class="designation">Support</p>
+                </div>
+                <div class="person">
+                    <img class="person-img"
+                        src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZmlsZSUyMGltYWdlfGVufDB8MHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                        alt="">
+                    <h3 class="name">Eman Subhi</h3>
+                    <p class="designation">Boss man</p>
+                </div>
+                <div class="person">
+                    <img class="person-img"
+                        src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZmlsZSUyMGltYWdlfGVufDB8MHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                        alt="">
+                    <h3 class="name">Reem Yakoub</h3>
+                    <p class="designation">Fixer</p>
+                </div>
+            </div>
+        </section>
+        <!-- WORK SECTION -->
+        <section class="work display-flex" id="work">
+            <div class="work-explanation">
+                <h2 class="work-heading">Our Work</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime dolores iste quas repellat quam
+                    voluptate asperiores non nesciunt! Placeat nisi assumenda cum eveniet magni rem ipsam nesciunt earum
+                    eaque iste.</p>
+            </div>
+            <div class="work-card">
+                <img src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bW91bnRhaW5zfGVufDB8MHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                    alt="" class="work-img">
+                <h4 class="customer-name">Customer 1</h4>
+                <h6 class="niche">Trade</h6>
+                <p>Blablablablablabla <br>
+                    Blablablablablabla <br>
+                    Blablablablablabla <br>
+                    Blablablablablabla <br></p>
+            </div>
+            <div class="work-card">
+                <img src="https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bW91bnRhaW5zfGVufDB8MHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                    alt="" class="work-img">
+                <h4 class="customer-name">Customer 2</h4>
+                <h6 class="niche">Trade</h6>
+                <p>Blablablablablabla <br>
+                    Blablablablablabla <br>
+                    Blablablablablabla <br>
+                    Blablablablablabla <br></p>
+            </div>
+            <div class="work-card">
+                <img src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bW91bnRhaW5zfGVufDB8MHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                    alt="" class="work-img">
+                <h4 class="customer-name">Customer 3</h4>
+                <h6 class="niche">Trade</h6>
+                <p>Blablablablablabla <br>
+                    Blablablablablabla <br>
+                    Blablablablablabla <br>
+                    Blablablablablabla <br></p>
+            </div>
+        </section>
+        <!-- CONTACT FORM -->
+
+        <section class="contact display-flex" id="contact">
+            <div class="plusSign">
+                <i class="fa-solid fa-plus"></i>
+            </div>
+            <div class="left-side">
+                <h2>Contact US</h2>
+                <h4>Address</h4>
+                <p class="address">Swing by for a cup of coffee, or whatever.</p>
+                <p class="location"><i class="fa-solid fa-location-dot"></i>Amman, Jordan</p>
+                <p class="location"><i class="fa-solid fa-phone"></i>+962 79 0000000</p>
+                <p class="location"><i class="fa-solid fa-envelope"></i>test@test.com</p>
+            </div>
+            <div class="right-side">
+                <form>
+                    <input type="text" placeholder="Name">
+                    <input type="text" placeholder="Emai">
+                    <input type="text" placeholder="Message">
+                    <div class="actions">
+                        <div class="checkbox">
+                            <input type="checkbox" name="like" id="likeCheckbox">
+                            <label for="like">I like it!</label>
+                        </div>
+                        <div class="button">
+                            <button class="btn">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="upScroller">
+            <a href="/">
+                <i class="fa-solid fa-circle-arrow-up"></i>
+            </a>
+        </div>
+        <h4>Follow us</h4>
+        <div class="social-links">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-google-plus-g"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+        </div>
+    </footer>
+</body>
+
+</html>
